@@ -37,4 +37,10 @@ juegos_borja = [
     Videojuego("Lies of P", ["RPG", "Acción", "Souls-like"], "2023-09-19", 9.0, 16, 59.99, 35)
 ]
 
+juegos_para_menores = [
+    juego for juego in juegos_borja
+    if juego.PEGI < 18 and juego.puntuacion >= 9.0 and juego.peso < 50
+]
+
 print(juegos_borja[0].fecha_salida[-2:])
+print(juegos_para_menores)
