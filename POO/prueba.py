@@ -36,3 +36,5 @@ juegos_borja = [
     Videojuego("Sekiro: Shadows Die Twice", ["Acción", "Souls-like"], "2019-03-22", 9.5, 18, 49.99, 25),
     Videojuego("Lies of P", ["RPG", "Acción", "Souls-like"], "2023-09-19", 9.0, 16, 59.99, 35)
 ]
+
+print(juegos_borja[0].fecha_salida[-2:])
